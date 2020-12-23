@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900'); 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* typography
+============= */
+
+h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.title {
+    font-size: 4em;
+    font-weight: 300;
+    color: white;
+    height: auto;
+}
+
+    /* buttons */
+.button {
+    display: inline-block;
+    font-size: .85rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .6em 1.75em;
+    color: white;
+}
+.button-accent:hover {
+    color: black;
+    border-color: white;
+    background: white;
+    font-style: bold;
+}  
+.button-accent:focus{
+    color: white;
+    background: lightgray;
+}
+
+/* header 
+========== */
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1.5em 1em;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8ems;
+    padding: .5em;
+    color: white;
+}
+
+nav a:hover,
+nav a:focus {
+    color: rgb(167, 167, 167);
+    font-style: bold;
+}
+nav a:focus {
+    color: rgb(102, 102, 102);
+}
+
+.home-hero {
+    background-image: url(images/port-04.png);
+    background-size: cover;
+    background-blend-mode: color;
+    background-position: center;
+    padding-top: 19vh;
+    height:60vh;
+}
+
+.home-about-textbox {
+    background-color: #232323;
+    padding: 4.5em;
+    outline: 2px solid #ffffff;
+    outline-offset: -2.5em;
+    color: #ffffff;
+    position: relative;
+} 
+
+.home-about-textbox h1 {
+    color: white;
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    top: .3em;
+    background-color: #232323;
+    padding: 0 0.6em;
+}
+
+
+
+
+@media (min-width: 15rem) {
+    .home-hero {
+        padding-top: 30vh;
+        height: 80vh;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    nav a {
+        font-size: 1em;
+    }
+    nav li {
+        margin-top: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    } 
+    h1 {
+        font-size: 2rem;
+    }
+    .home-about-textbox h1 {
+        font-size: 1.8rem;
+        top: .7em;
+        margin-bottom: 3em;
+    }
+}
+@media (min-width: 23rem) {
+    .home-hero {
+        padding-top: 35vh;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+    nav li {
+        margin-top: 2.5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    } 
+    h1 {
+        font-size: 2rem;
+    }
+
+    .home-about-textbox h1 {
+        top: .7em;
+    }
+}
+@media (min-width: 29rem) {
+    .home-hero {
+        padding-top: 30vh;
+    }
+    .home-about-textbox{
+        font-size: 1.2em;
+    }
+    .home-about-textbox h1{
+        top: 1em;
+    }
+    .title {
+        font-size: 4.5rem;
+        
+    }
+    nav li {
+        margin-top: 4em;
+    }
+}
+
+
+@media (min-width: 54rem) {
+    .home-hero {
+        padding-top: 40vh;
+        height: 100vh;
+    }
+    .title {
+        font-size: 5rem;
+    }
+    nav li {
+        margin-top: 5em;
+    }
+    .home-about {
+        background-image: url(images/BG-mountain.jpg);
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-bottom: 10vh;
+    }
+    .home-about-textbox {
+        max-width: 60%;
+        margin-left: 5%;
+        top: -5em;
+        text-align: left;
+        box-shadow: 0 0 4em 0 rgb(0, 0, 0, .4);
+    }
+    .home-about-textbox h1 {
+        font-size: 3em;
+        top: .3em;
+        left: 3.25rem;
+        transform: translateX(0);
+    }
+    .home-about-textbox p {
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 90rem) {
+    .title {
+        font-size: 7em;
+    }.home-hero {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+    nav a {
+        font-size: 1.5em;
+    }
+    nav li {
+        margin-top: 3em;
+    }
+    .container {
+        max-width: 70%;
+        /margin-left: 25%;
+    }
+    .home-about{
+        margin-left: 13em;
+        margin-top: 3em;
+    }
+    .home-about-textbox{
+        margin-left: -17em;
+        top: -7.4em;
+    }
+}
