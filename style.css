@@ -37,6 +37,18 @@ section::after {
 }
 
 
+#WIP {
+    background-color: #232323;
+    padding: 4.5em;
+    padding-top: 5.5em;
+    outline: 2px solid #ffffff;
+    outline-offset: -2.5em;
+    color: #ffffff;
+    position: relative;;
+}
+
+
+
 /* typography
 ============= */
 
@@ -145,18 +157,21 @@ nav a:focus {
     color: white;
 }
 .portfolio {
-    margin: 3em 0;
+    max-width: 70vw;
+    margin: 0 auto;
+    margin-top: 5em;
 }
 
 .port-item {
     margin: 0;
     position: relative;
+    padding: 2em 0;
 }
 
 .port-desc {
     position: absolute;
     z-index: 100;
-    bottom: 1.5em;
+    bottom: 5em;
     left: 4em;
     right: 4em;
     color: white;
@@ -278,16 +293,15 @@ p, h1 {
     .button{ 
         font-size: 1em;
     }
+
     .home-about {
-        background-image: url(images/BG-mountain.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding-bottom: 8em;
+
     }
-    
     .home-about-textbox {
-        max-width: 60%;
+        max-width: 70%;
         margin-left: 5%;
         top: -5em;
         text-align: left;
