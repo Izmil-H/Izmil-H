@@ -2,338 +2,198 @@
 * {
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    margin: 0;
     font-family: 'Raleway', sans-serif;
+    background-color: rgb(60, 66, 75);
+    color: white;
     text-align: center;
 }
-img {
-    max-width: 100%;
-    height: auto;
+
+
+header {
+    text-align: left;
 }
 
-.container {
-    width: 100%;
+ul {
     margin: auto;
+    padding: 0em;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0em 1rem;
+}
+a {
+    text-decoration: none; 
+    color: white;
+    font-size: 2rem;
+}
+a:hover {
+    color: gray;
 }
 
-.clearfix::after, 
-section::after {
-    content: '';
-    display: block;
-    clear: both;
+.homePage {
+    position: fixed;
+    z-index: 9999;
+    margin-top: .8rem;
+    margin-left: .8rem;
+    padding: .6rem ;
+
+    border-radius: 70%;
+    backdrop-filter: blur(20px);
 }
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.homePage li {
+    padding: 0;
 }
-
-
-#WIP {
-    background-color: #232323;
-    padding: 4.5em;
-    padding-top: 5.5em;
-    outline: 2px solid #ffffff;
-    outline-offset: -2.5em;
-    color: #ffffff;
-    position: relative;;
-}
-
-
-
-/* typography
-============= */
-
-h1 {
-    font-weight: 300;
+.homePage a {
     font-size: 2.5rem;
-    margin-top: 0;
 }
 
 .title {
-    font-size: 8vw;
-    text-align: center;
-    font-weight: 300;
-    color: white;
-    height: auto;
-}
-.button {
-    display: inline-block;
-    font-size: .85rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-width: 2px;
-    border-style: solid;
-    padding: .6em 1.75em;
-    color: white;
+    font-size: 9rem;
+    font-weight: 400;
+    padding-top: 15rem;
+    margin-bottom: 3rem;
 }
 
-.button-accent:hover {
-    color: black;
-    border-color: white;
-    background: white;
-    font-style: bold;
-}  
-.button-accent:focus{
-    color: white;
-    background: lightgray;
+.about-me {
+    width: fit-content;
+    margin: auto;
+    margin-top: 10rem;
+    padding: 2rem;
+    font-size: 2rem; 
+    color: rgb(158, 166, 173);
+    border-top: dotted;
+    border-color: rgba(240, 248, 255, 0.144);
 }
 
-/* header 
-========== */
-
-header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: 1em;
-}
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin: 1.5em 1em;
-}
-
-nav a {
-    font-weight: 900;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8ems;
-    padding: .5em;
-    color: white;
-}
-
-nav a:hover,
-nav a:focus {
-    color: rgb(167, 167, 167);
-    font-style: bold;
-}
-nav a:focus {
-    color: rgb(102, 102, 102);
-}
-
-.home-hero {
-    background-image: url(images/5-officeMoon2.png);
-    background-size: cover;
-    background-blend-mode: color;
-    background-position: center;
-    padding-top: 19vh;
-    height:60vh;
-}
-
-.home-about-textbox {
-    background-color: #232323;
-    padding: 4.5em;
-    outline: 2px solid #ffffff;
-    outline-offset: -2.5em;
-    color: #ffffff;
-    position: relative;
-} 
-
-.home-about-textbox h1 {
-    color: white;
-    position: absolute;
-    left: 5em;
-    transform: translateX(-50%);
-    top: .3em;
-    background-color: #232323;
-    padding: 0 0.6em;
-}
-
-.button-small{
-    color: white;
-}
 .portfolio {
-    max-width: 70vw;
-    margin: 0 auto;
-    margin-top: 5em;
+    padding-top: 10rem;
+    width: 960px;
+    margin: auto;
+}
+.portfolio h1{
+    width: fit-content;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    padding-right: 7rem;
+    padding-left: 0.4rem;
+    padding-bottom: 0rem; 
+    font-size: 4rem;
+    font-weight: 100;
+    border-bottom: dotted;
+    border-color: rgb(146, 145, 145);
 }
 
 .port-item {
-    margin: 0;
     position: relative;
-    padding: 2em 0;
+    margin-bottom: 10%;
 }
-
+.port-item img {
+    width: 90%;
+    border-bottom-right-radius: 80%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    filter: blur(0  px);
+    transition: border-radius .5s, filter .5s;
+}
+.port-item:hover img{
+    border-radius: 5%;
+    filter: blur(0px);
+}
 .port-desc {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 100;
-    bottom: 5em;
-    left: 4em;
-    right: 4em;
-    color: white;
-    background-color: rgba(0,0,0,.5);
-    padding-bottom: 1em;
-    padding-top: .2em;
+    bottom: 1.5em;
+    color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    padding-bottom: .5em;
+    padding-top: .5em;
     margin: 0;
+    transition: color .2s, backdrop-filter .1s ease .1s, background-color .2s;
 }
-.port-desc p{ 
-    margin: .5em;
+.port-item:hover .port-desc {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(12px) ;
 }
-
-
-/* ---- animations --- */
-nav a,
-.button,
-.home-about,
-p, h1 {
-    animation: fade-in 1s;
-}
-.title {
-    animation: fade-in 1.5s ease-in;
+.port-desc p {
+    font-size: 200%;
+    margin: .1em 0.5em;
 }
 
 
-
-@media (min-width: 15rem) {
-    .home-hero {
-        padding-top: 35vh;
-        height: 85vh;
-    }
+@media (max-width: 985px) {
     .title {
-        font-size: 14vw;
+        padding-top: 10rem;
+        font-size: 6rem;
     }
-    nav{
-        margin: 2em 1em;
+    .homePage {
+        margin: 0rem;
+        background-color: rgba(255, 255, 255, 0.055);
     }
-    nav a {
-        font-size: .9em;
-        font-weight: 100;
-    }
-    nav li {
-        margin: .6em 0em;
-    } 
-    .button{
-        font-size: .8em;
-    }
-    .button-small{
-        font-size: 65%;
-    }
-    h1 {
+    .homePage a {
         font-size: 2rem;
     }
-    .home-about-textbox h1 {
-        font-size: 1.8rem;
-        top: .7em;
-        margin-bottom: 3em;
+    .links a {
+        font-size: 1.5rem;
+    }
+    .portfolio {
+        max-width: 90%;
+    }
+    .portfolio h1 {
+        padding-right: 3rem;
+    }
+    .port-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .port-item img {
+        width: 100%;
     }
 }
-
-@media (min-width: 23rem) {
-    .home-hero {
-        height: 80vh;
-        padding-top: 30vh;
+@media (max-width: 560px) {
+    .portfolio {
+        max-width: 100%;
     }
-    nav li {
-        font-size: 1.2em;
+    .portfolio h1 {
+        font-size: 2.5rem;
+        padding-right: 1rem;
+        margin-top: 5rem;
     }
-    h1 {
-        font-size: 2rem;
+    .port-item {
+        margin-bottom: 1rem;
     }
-
-    .home-about-textbox h1 {
-        top: .6em;
-        font-size: 2em;
-    }
-    .home-about-textbox p {
-        font-size: 1.2em;
-    }
-}
-
-@media (min-width: 38rem) {
-    .home-hero {
-        padding-top: 32vh;
-    }
-    .home-about-textbox{
-        font-size: 1.2em;
-    }
-    .title {
-        font-size: 5em;
-        margin-bottom: 6vh;
-    }
-    nav li{
-        font-size: 1.3em;
-    }
-    .button {
-        font-size: .8em;
+    .port-item img {
+        border-radius: 5%;
     }
     .port-desc {
-        margin: 0vw 25vw;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.027);
+        backdrop-filter: blur(12px) ;
+    }
+    .port-desc p {
+        font-size: 1.3rem;
     }
 }
-
-@media (min-width: 54rem) {
-    .home-hero {
-        padding-top: 38vh;
-        height: 100vh;
-    }
-    nav {
-        margin-top: 4em;
-    }
-    nav li{
-        font-size: 1.5em;
-    }
+@media (max-width: 450px) {
     .title {
-        font-size: 8.6vw;
-        margin-bottom: 10vh;
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
     }
-    .button{ 
-        font-size: 1em;
+    .links a {
+        font-size: 1rem;
     }
-
-    .home-about {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-    }
-    .home-about-textbox {
-        max-width: 70%;
-        margin-left: 5%;
-        top: -5em;
-        text-align: left;
-        box-shadow: 0 0 4em 0 rgb(0, 0, 0, .4);
-    }
-    .home-about-textbox h1 {
-        font-size: 3em;
-        top: .2em;
-        left: 5rem;
-        transform: translateX(0);
-    }
-    .home-about-textbox p {
-        font-size: 1.5em;
-    }
-}
-
-@media (min-width: 90rem) {
-    .title {
-        font-size: 7vw;
-        margin-bottom: 10vh;
-    }.home-hero {
-        height: 100vh;
-    }
-    .container-about {
-        max-width: 70%;
-    }
-    .home-about{
-        margin-left: 13em;
-        margin-top: 3em;
-    }
-    .home-about-textbox{
-        margin-left: -17em;
-        top: -7.4em;
+    .portfolio {
+        padding-top: 5rem;
     }
 }
