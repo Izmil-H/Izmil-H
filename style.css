@@ -416,17 +416,18 @@ footer li:hover p {
         font-size: 1rem;
     }
     
+    main {
+        padding-bottom: 3rem;
+    }
+
     footer {
         padding: 1rem;
     }
     footer li {
-        padding: 0 1rem;
+        padding: 0 1.5rem;
     }
     footer p {
         font-size: 0;
         margin: 0;
-    }
-    footer img {
-        max-width: 30px;
     }
 }
