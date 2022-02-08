@@ -1,0 +1,13 @@
+.category {
+    width: fit-content;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    padding-right: 7rem;
+    padding-left: 0.4rem;
+    padding-bottom: 0rem; 
+    padding-top: 0;
+    font-size: 4rem;
+    font-weight: 100;
+    border-bottom: dotted;
+    border-color: rgb(146, 145, 145);
+}
