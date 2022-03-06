@@ -23,7 +23,7 @@ function Layout(props) {
             </a>
         </li>
         <li> 
-            <a href="https://dmoj.ca/users/?page=18#!ismail111" target="_blank" rel="noreferrer"> 
+            <a href="https://dmoj.ca/user/ismail111" target="_blank" rel="noreferrer"> 
               <img src={'./images/footer/dmojLogo.png'} alt="Dmoj Logo"></img> 
               <p>Dmoj</p>
             </a> 

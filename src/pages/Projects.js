@@ -1,5 +1,4 @@
 import PortfolioList from '../components/projects/PortfolioList';
-import NavBar from '../components/ui/NavBar';
 import styles from './Projects.module.css'
 
 
