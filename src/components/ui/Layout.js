@@ -15,7 +15,12 @@ function Layout(props) {
     </header>
     <main className={styles.main}>{props.children}</main>
     <footer>
-      <ul>
+        <ul>
+            <li>
+                <p>Ismail Hosny 2024</p>
+            </li>
+        </ul>
+      {/* <ul>
         <li> 
             <a href="https://github.com/Izmil-H/" target="_blank" rel="noreferrer"> 
               <img src={'./images/footer/githubLogo.png'} alt="Github Logo"></img>  
@@ -34,7 +39,7 @@ function Layout(props) {
               <p>Codeforces</p>
             </a>
         </li>
-      </ul>     
+      </ul>      */}
     </footer>
   </div> 
 }
