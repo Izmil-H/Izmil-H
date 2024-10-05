@@ -8,7 +8,7 @@ function HomePage() {
       <h1>Ismail Hosny</h1>
       <NavBar />
       <p class={styles.aboutMe}>
-        I am a 12th grade student at Earl Haig Secondary School
+        I am a second year Honours Computer Science student at the University of Waterloo
       </p>
     </section> 
 )}
